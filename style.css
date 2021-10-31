@@ -22,6 +22,7 @@ a{
 .flex-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .hero{
@@ -82,9 +83,9 @@ a{
     color: #E5E7EB;
 }
 
-.hero .header,.hero .content, .card-container{
+.hero .header,.hero .content, .card-container, .quote-container{
     min-width: 1000px;
-    max-width: 1500px;
+    max-width: 1100px;
     flex: 1 1 auto;
 }
 
@@ -128,7 +129,31 @@ a{
 }
 
 .banner{
+    display: flex;
+    background-color: #E5E7EB;
+    justify-content: center;
+    width: 100%;
+}
 
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.quote{
+    font-style: italic;
+    
+}
+
+.author{
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.quote, .author{
+    font-size: 36px;
+    color: #1F2937;
 }
 
 button{
@@ -138,8 +163,36 @@ button{
     padding: 8px;
     padding-left: 24px;
     padding-right: 24px;
+    border-color: #E5E7EB;
+    border-style: solid;
+}
+
+button:hover{
+    background-color: #E5E7EB;
+    color: #3882f6;
+}
+
+.call{
+    margin: 64px;
+    border-radius: 8px;
+    width: 800px;
+    background-color: #3882f6;
+    color: #E5E7EB;
+    padding: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.call .main{
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .footer{
-
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
 }
+
